@@ -13,9 +13,9 @@
       <ul class="flex flex-wrap justify-between">
         <li class="w-8" v-for="(item, index) in list" :key="index">
           <div class="w-full h-8">
-              <van-image class="h-full" fit="cover" :src="item.img" />
+            <van-image class="h-full" fit="cover" :src="item.img" />
           </div>
-          <div class="text-red-600 p-1 text-sm">￥{{item.price}}</div>
+          <div class="text-red-600 p-1 text-sm">￥{{ item.price }}</div>
         </li>
       </ul>
     </div>
@@ -36,28 +36,30 @@ export default Vue.extend({
       list: [
         {
           img: 'https://img01.yzcdn.cn/vant/cat.jpeg',
-          price: '25'
-        },{
+          price: '25',
+        },
+        {
           img: 'https://img01.yzcdn.cn/vant/cat.jpeg',
-          price: '25'
-        },{
+          price: '25',
+        },
+        {
           img: 'https://img01.yzcdn.cn/vant/cat.jpeg',
-          price: '25'
-        },{
+          price: '25',
+        },
+        {
           img: 'https://img01.yzcdn.cn/vant/cat.jpeg',
-          price: '25'
-        }
+          price: '25',
+        },
       ],
-      searchValue: ''
+      searchValue: '',
     }
   },
   methods: {
     handleClick() {
       this.$router.push('/search')
-    }
-  }
+    },
+  },
 })
 </script>
 
-<style>
-</style>
+<style></style>

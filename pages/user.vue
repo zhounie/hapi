@@ -1,7 +1,5 @@
 <template>
-  <div>
-    user
-  </div>
+  <div>user</div>
 </template>
 
 <script lang="ts">
@@ -11,16 +9,13 @@ export default Vue.extend({
   layout: 'home',
   created() {
     this.$router.replace({
-      path: '/login'
+      path: '/login',
     })
   },
   data() {
-    return {
-      
-    }
-  }
+    return {}
+  },
 })
 </script>
 
-<style>
-</style>
+<style></style>

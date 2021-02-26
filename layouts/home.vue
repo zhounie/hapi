@@ -4,10 +4,16 @@
       <Nuxt />
     </div>
     <van-tabbar route>
-        <van-tabbar-item icon="home-o" replace to="/" >首页</van-tabbar-item>
-        <van-tabbar-item icon="apps-o" replace to="/classify">分类</van-tabbar-item>
-        <van-tabbar-item icon="shopping-cart-o" replace to="/cart">购物车</van-tabbar-item>
-        <van-tabbar-item icon="friends-o" replace to="/user">个人中心</van-tabbar-item>
+      <van-tabbar-item icon="home-o" replace to="/">首页</van-tabbar-item>
+      <van-tabbar-item icon="apps-o" replace to="/classify"
+        >分类</van-tabbar-item
+      >
+      <van-tabbar-item icon="shopping-cart-o" replace to="/cart"
+        >购物车</van-tabbar-item
+      >
+      <van-tabbar-item icon="friends-o" replace to="/user"
+        >个人中心</van-tabbar-item
+      >
     </van-tabbar>
   </div>
 </template>
@@ -17,12 +23,10 @@ import Vue from 'vue'
 
 export default Vue.extend({
   data() {
-    return {
-    }
-  }
+    return {}
+  },
 })
 </script>
-
 
 <style lang="less" scoped>
 .layout_home {
