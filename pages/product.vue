@@ -111,6 +111,7 @@
             >关注店铺</van-button
           >
           <van-button plain round size="small" icon="shop-o"
+            @click="handleEnterShop"
             >进入店铺</van-button
           >
         </div>
@@ -195,6 +196,9 @@ export default Vue.extend({
     onSelect({ path }: { path: string }) {
       this.$router.push(path)
     },
+    handleEnterShop() {
+      this.$router.push('/shop')
+    }
   },
 })
 </script>
